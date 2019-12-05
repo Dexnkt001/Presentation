@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section><h1>Microservices</h1></section>
+				<section><h2>what will you learn from this presentation</h2>
+				<ul>
+					<li>What is a microservice?</li>
+					<li>microservice benefits</li>
+					<li>disadvantages of microservice</li>
+					<li>summarizing</li>
+				</ul>
+				</section>
+				<section><img src="img/monolit.png" alt="monolit"></section>
+				<section><img src="img/micriservice.png" alt="microservice"></section>
+				<section><h2>advantages</h2>
+					<section><h3>monolith decomposition</h3></section>
+				    <section><h3>simpler tests</h3></section>
+					<section><h3>independent releases</h3></section>
+					<section><h3>independent degradation</h3></section>
+				    <section><h3>independent scaling</h3></section>
+					<section><h3>introducing new ideas</h3></section>
+				    <section><h3>managerial function</h3></section>
+				</section>
+				<section>
+					disadvantage
+					<section>user request context</section>
+					<section>distribution</section>
+					<section>adding a new service</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
